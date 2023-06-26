@@ -2,12 +2,15 @@ package br.com.descomplicandoJava.day06.encapsulament;
 
 public class Cachorro {
 
+    //apenas a classe possui acesso
     private Double peso;
     private Integer idade;
 
+    //todo projeto tem acesso
     public Double pesopublic;
     public Integer idadePublic;
 
+    //acesso a nivel pacote
     protected Double pesoProtected;
     protected Integer idadeProtected;
 
@@ -67,7 +70,7 @@ public class Cachorro {
         return "zzzzz";
     }
 
-    private String comer() {
+     String comer() {
         return "hora da racao";
 
     }
