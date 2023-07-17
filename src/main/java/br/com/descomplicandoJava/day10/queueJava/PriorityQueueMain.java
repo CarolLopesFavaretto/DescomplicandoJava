@@ -25,5 +25,11 @@ public class PriorityQueueMain {
             System.out.println(equipe);
         }
 
+
+        System.out.println( priorityQueue.peek());
+
+        System.out.println( priorityQueue.size());
+
+        System.out.println( priorityQueue.stream().toList());
     }
 }
