@@ -2,7 +2,7 @@ package br.com.descomplicandoJava.day10.listJava;
 
 import java.util.ArrayList;
 
-public class ArrayListColletions {
+public class ArrayListCollections {
 
     public static void main(String[] args) {
 
@@ -38,6 +38,10 @@ public class ArrayListColletions {
 
         //qual indice que esta localizado
         System.out.println(integerArrayList.indexOf(3));
+
+        //limpando array
+        integerArrayList.clear();
+        System.out.println(integerArrayList.isEmpty());
 
     }
 }
