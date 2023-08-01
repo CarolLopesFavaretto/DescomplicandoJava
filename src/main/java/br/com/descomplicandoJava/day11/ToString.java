@@ -11,5 +11,7 @@ public class ToString {
         funcionario.setSalario(8000.00);
 
         System.out.println(funcionario);
+
+        System.out.println(funcionario.getNome().equals("Caroline"));
     }
 }
