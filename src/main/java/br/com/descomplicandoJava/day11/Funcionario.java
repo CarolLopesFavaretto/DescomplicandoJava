@@ -55,4 +55,8 @@ public class Funcionario {
                 && Objects.equals(setor, that.setor) && Objects.equals(salario, that.salario);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, cargo, setor, salario);
+    }
 }
