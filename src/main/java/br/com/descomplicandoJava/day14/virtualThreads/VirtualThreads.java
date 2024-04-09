@@ -18,15 +18,15 @@ public class VirtualThreads {
 
         Random random = new Random();
         // criar numeros inteiros aleatorios ate o valor de bound
-        Runnable runnable = () ->{
+        Runnable runnable = () -> {
             Integer i = random.nextInt(999999999);
         };
 
-        for (int i = 0; i <100; i++){
-            if (virtualFlag){
+        for (int i = 0; i < 100; i++) {
+            if (virtualFlag) {
 //                Thread.startVirtualThread(runnable); -> Java 19
 
-            }else {
+            } else {
                 Thread thread = new Thread(runnable);
                 thread.start();
             }
